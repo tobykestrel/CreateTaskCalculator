@@ -37,14 +37,13 @@
             this.btMultiply = new System.Windows.Forms.Button();
             this.btMinus = new System.Windows.Forms.Button();
             this.btPlus = new System.Windows.Forms.Button();
-            this.btSqrt = new System.Windows.Forms.Button();
-            this.btPower = new System.Windows.Forms.Button();
             this.btClear = new System.Windows.Forms.Button();
-            this.rtbWorkIO = new System.Windows.Forms.RichTextBox();
+            this.rtbIO = new System.Windows.Forms.RichTextBox();
             this.bt0 = new System.Windows.Forms.Button();
             this.btNegative = new System.Windows.Forms.Button();
             this.btAnswer = new System.Windows.Forms.Button();
             this.btHistory = new System.Windows.Forms.Button();
+            this.btDecimal = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // bt3
@@ -88,9 +87,9 @@
             this.btEnter.BackColor = System.Drawing.SystemColors.InfoText;
             this.btEnter.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btEnter.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btEnter.Location = new System.Drawing.Point(322, 8);
+            this.btEnter.Location = new System.Drawing.Point(232, 390);
             this.btEnter.Name = "btEnter";
-            this.btEnter.Size = new System.Drawing.Size(100, 75);
+            this.btEnter.Size = new System.Drawing.Size(100, 108);
             this.btEnter.TabIndex = 1;
             this.btEnter.Text = "ENTER";
             this.btEnter.UseVisualStyleBackColor = false;
@@ -179,7 +178,7 @@
             this.btDivide.TabIndex = 6;
             this.btDivide.Text = "÷";
             this.btDivide.UseVisualStyleBackColor = false;
-            this.btDivide.Click += new System.EventHandler(this.btDivide_Click);
+            this.btDivide.Click += new System.EventHandler(this.operatorButton_Click);
             // 
             // btMultiply
             // 
@@ -189,9 +188,9 @@
             this.btMultiply.Name = "btMultiply";
             this.btMultiply.Size = new System.Drawing.Size(100, 100);
             this.btMultiply.TabIndex = 5;
-            this.btMultiply.Text = "x";
+            this.btMultiply.Text = "×";
             this.btMultiply.UseVisualStyleBackColor = false;
-            this.btMultiply.Click += new System.EventHandler(this.btMultiply_Click);
+            this.btMultiply.Click += new System.EventHandler(this.operatorButton_Click);
             // 
             // btMinus
             // 
@@ -203,7 +202,7 @@
             this.btMinus.TabIndex = 4;
             this.btMinus.Text = "-";
             this.btMinus.UseVisualStyleBackColor = false;
-            this.btMinus.Click += new System.EventHandler(this.btMinus_Click);
+            this.btMinus.Click += new System.EventHandler(this.operatorButton_Click);
             // 
             // btPlus
             // 
@@ -215,56 +214,30 @@
             this.btPlus.TabIndex = 3;
             this.btPlus.Text = "+";
             this.btPlus.UseVisualStyleBackColor = false;
-            this.btPlus.Click += new System.EventHandler(this.btPlus_Click);
-            // 
-            // btSqrt
-            // 
-            this.btSqrt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btSqrt.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btSqrt.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btSqrt.Location = new System.Drawing.Point(330, 276);
-            this.btSqrt.Name = "btSqrt";
-            this.btSqrt.Size = new System.Drawing.Size(92, 100);
-            this.btSqrt.TabIndex = 8;
-            this.btSqrt.Text = "√";
-            this.btSqrt.UseVisualStyleBackColor = false;
-            this.btSqrt.Click += new System.EventHandler(this.btSqrt_Click);
-            // 
-            // btPower
-            // 
-            this.btPower.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btPower.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btPower.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btPower.Location = new System.Drawing.Point(232, 276);
-            this.btPower.Name = "btPower";
-            this.btPower.Size = new System.Drawing.Size(92, 100);
-            this.btPower.TabIndex = 7;
-            this.btPower.Text = "^";
-            this.btPower.UseVisualStyleBackColor = false;
-            this.btPower.Click += new System.EventHandler(this.btPower_Click);
+            this.btPlus.Click += new System.EventHandler(this.operatorButton_Click);
             // 
             // btClear
             // 
             this.btClear.BackColor = System.Drawing.SystemColors.InfoText;
             this.btClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btClear.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btClear.Location = new System.Drawing.Point(322, 89);
+            this.btClear.Location = new System.Drawing.Point(232, 276);
             this.btClear.Name = "btClear";
-            this.btClear.Size = new System.Drawing.Size(100, 75);
+            this.btClear.Size = new System.Drawing.Size(100, 108);
             this.btClear.TabIndex = 2;
             this.btClear.Text = "CLEAR";
             this.btClear.UseVisualStyleBackColor = false;
             this.btClear.Click += new System.EventHandler(this.btClear_Click);
             // 
-            // rtbWorkIO
+            // rtbIO
             // 
-            this.rtbWorkIO.BackColor = System.Drawing.SystemColors.WindowFrame;
-            this.rtbWorkIO.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rtbWorkIO.Location = new System.Drawing.Point(4, 12);
-            this.rtbWorkIO.Name = "rtbWorkIO";
-            this.rtbWorkIO.Size = new System.Drawing.Size(312, 152);
-            this.rtbWorkIO.TabIndex = 0;
-            this.rtbWorkIO.Text = "";
+            this.rtbIO.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.rtbIO.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rtbIO.Location = new System.Drawing.Point(4, 12);
+            this.rtbIO.Name = "rtbIO";
+            this.rtbIO.Size = new System.Drawing.Size(418, 152);
+            this.rtbIO.TabIndex = 0;
+            this.rtbIO.Text = "";
             // 
             // bt0
             // 
@@ -290,31 +263,46 @@
             this.btNegative.TabIndex = 19;
             this.btNegative.Text = "(-)";
             this.btNegative.UseVisualStyleBackColor = false;
+            this.btNegative.Click += new System.EventHandler(this.btNegative_Click);
             // 
             // btAnswer
             // 
             this.btAnswer.BackColor = System.Drawing.Color.Silver;
             this.btAnswer.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btAnswer.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btAnswer.Location = new System.Drawing.Point(156, 504);
+            this.btAnswer.Location = new System.Drawing.Point(232, 504);
             this.btAnswer.Name = "btAnswer";
-            this.btAnswer.Size = new System.Drawing.Size(70, 70);
+            this.btAnswer.Size = new System.Drawing.Size(97, 70);
             this.btAnswer.TabIndex = 21;
             this.btAnswer.Text = "ANS";
             this.btAnswer.UseVisualStyleBackColor = false;
+            this.btAnswer.Click += new System.EventHandler(this.btAns_Click);
             // 
             // btHistory
             // 
             this.btHistory.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btHistory.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btHistory.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btHistory.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btHistory.Location = new System.Drawing.Point(232, 466);
+            this.btHistory.Location = new System.Drawing.Point(335, 276);
             this.btHistory.Name = "btHistory";
-            this.btHistory.Size = new System.Drawing.Size(190, 81);
+            this.btHistory.Size = new System.Drawing.Size(87, 298);
             this.btHistory.TabIndex = 22;
             this.btHistory.Text = "History";
             this.btHistory.UseVisualStyleBackColor = false;
             this.btHistory.Click += new System.EventHandler(this.btHistory_Click);
+            // 
+            // btDecimal
+            // 
+            this.btDecimal.BackColor = System.Drawing.Color.Silver;
+            this.btDecimal.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btDecimal.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btDecimal.Location = new System.Drawing.Point(156, 504);
+            this.btDecimal.Name = "btDecimal";
+            this.btDecimal.Size = new System.Drawing.Size(70, 70);
+            this.btDecimal.TabIndex = 23;
+            this.btDecimal.Text = ".";
+            this.btDecimal.UseVisualStyleBackColor = false;
+            this.btDecimal.Click += new System.EventHandler(this.btDecimal_Click);
             // 
             // Form1
             // 
@@ -322,14 +310,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(427, 580);
+            this.Controls.Add(this.btDecimal);
             this.Controls.Add(this.btHistory);
             this.Controls.Add(this.btAnswer);
             this.Controls.Add(this.btNegative);
             this.Controls.Add(this.bt0);
-            this.Controls.Add(this.rtbWorkIO);
+            this.Controls.Add(this.rtbIO);
             this.Controls.Add(this.btClear);
-            this.Controls.Add(this.btPower);
-            this.Controls.Add(this.btSqrt);
             this.Controls.Add(this.btPlus);
             this.Controls.Add(this.btMinus);
             this.Controls.Add(this.btMultiply);
@@ -366,14 +353,13 @@
         private System.Windows.Forms.Button btMultiply;
         private System.Windows.Forms.Button btMinus;
         private System.Windows.Forms.Button btPlus;
-        private System.Windows.Forms.Button btSqrt;
-        private System.Windows.Forms.Button btPower;
         private System.Windows.Forms.Button btClear;
-        private System.Windows.Forms.RichTextBox rtbWorkIO;
+        private System.Windows.Forms.RichTextBox rtbIO;
         private System.Windows.Forms.Button bt0;
         private System.Windows.Forms.Button btNegative;
         private System.Windows.Forms.Button btAnswer;
         private System.Windows.Forms.Button btHistory;
+        private System.Windows.Forms.Button btDecimal;
     }
 }
 
