@@ -19,14 +19,20 @@ namespace CreateTaskCalculator {
         public Form1() {
             InitializeComponent();
         }
-        List<Task> historyList = new List<Task>();
+        public List<string> historyList = new List<string>();
         string num1_S = "";
         string numOperator = "";
         string num2_S = "";
         string result_S = "";
 
         private void updateDisplay() {
-            rtbIO.Text = num1_S + numOperator + num2_S;
+            rtbIO.Text = num1_S + " " + numOperator + " " + num2_S;
+        }
+        private void resetOperationVariables() {
+            num1_S = "";
+            numOperator = "";
+            num2_S = "";
+            result_S = "";
         }
 
         private void numberButton_Click(object sender, EventArgs e) {
@@ -59,28 +65,41 @@ namespace CreateTaskCalculator {
                 }
                 result_S = Convert.ToString(result_D);
                 rtbIO.Text = result_S;
-                historyList.Add();
+                historyList.Add(num1_S + " " + numOperator + " " + num2_S + " = " + result_S);
+                resetOperationVariables();
             }
         }
 
         private void btClear_Click(object sender, EventArgs e) {
-
+            resetOperationVariables();
+            updateDisplay();
         }
 
         private void btHistory_Click(object sender, EventArgs e) {
-
-        }
-
-        private void btAns_Click(object sender, EventArgs e) {
-
+            if (num1_S == "") {
+                rtbIO.Text = "";
+            }
+            Form2 f = new Form2(this);
+            f.Show();
         }
 
         private void btNegative_Click(object sender, EventArgs e) {
-
+            if (num1_S == "") {
+                num1_S += "-";
+                updateDisplay();
+            } else if (numOperator != "" && num2_S == "") {
+                num2_S += "-";
+                updateDisplay();
+            }
         }
 
         private void btDecimal_Click(object sender, EventArgs e) {
-
+            if (numOperator == "") {
+                num1_S += ".";
+            } else {
+                num2_S += ".";
+            }
+            updateDisplay();
         }
     }
 }

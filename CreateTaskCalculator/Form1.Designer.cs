@@ -33,23 +33,22 @@
             this.bt9 = new System.Windows.Forms.Button();
             this.bt8 = new System.Windows.Forms.Button();
             this.bt7 = new System.Windows.Forms.Button();
-            this.btDivide = new System.Windows.Forms.Button();
-            this.btMultiply = new System.Windows.Forms.Button();
-            this.btMinus = new System.Windows.Forms.Button();
-            this.btPlus = new System.Windows.Forms.Button();
             this.btClear = new System.Windows.Forms.Button();
             this.rtbIO = new System.Windows.Forms.RichTextBox();
             this.bt0 = new System.Windows.Forms.Button();
             this.btNegative = new System.Windows.Forms.Button();
-            this.btAnswer = new System.Windows.Forms.Button();
             this.btHistory = new System.Windows.Forms.Button();
             this.btDecimal = new System.Windows.Forms.Button();
+            this.btDivide = new System.Windows.Forms.Button();
+            this.btMultiply = new System.Windows.Forms.Button();
+            this.btMinus = new System.Windows.Forms.Button();
+            this.btPlus = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // bt3
             // 
-            this.bt3.BackColor = System.Drawing.Color.Silver;
-            this.bt3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt3.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.bt3.Font = new System.Drawing.Font("Cascadia Code SemiBold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt3.Location = new System.Drawing.Point(156, 428);
             this.bt3.Name = "bt3";
             this.bt3.Size = new System.Drawing.Size(70, 70);
@@ -60,8 +59,8 @@
             // 
             // bt2
             // 
-            this.bt2.BackColor = System.Drawing.Color.Silver;
-            this.bt2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt2.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.bt2.Font = new System.Drawing.Font("Cascadia Code SemiBold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt2.Location = new System.Drawing.Point(80, 428);
             this.bt2.Name = "bt2";
             this.bt2.Size = new System.Drawing.Size(70, 70);
@@ -72,8 +71,8 @@
             // 
             // bt1
             // 
-            this.bt1.BackColor = System.Drawing.Color.Silver;
-            this.bt1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.bt1.Font = new System.Drawing.Font("Cascadia Code SemiBold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt1.Location = new System.Drawing.Point(4, 428);
             this.bt1.Name = "bt1";
             this.bt1.Size = new System.Drawing.Size(70, 70);
@@ -84,12 +83,12 @@
             // 
             // btEnter
             // 
-            this.btEnter.BackColor = System.Drawing.SystemColors.InfoText;
-            this.btEnter.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btEnter.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btEnter.Location = new System.Drawing.Point(232, 390);
+            this.btEnter.BackColor = System.Drawing.Color.Silver;
+            this.btEnter.Font = new System.Drawing.Font("Cascadia Code SemiBold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btEnter.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btEnter.Location = new System.Drawing.Point(232, 428);
             this.btEnter.Name = "btEnter";
-            this.btEnter.Size = new System.Drawing.Size(100, 108);
+            this.btEnter.Size = new System.Drawing.Size(100, 146);
             this.btEnter.TabIndex = 1;
             this.btEnter.Text = "ENTER";
             this.btEnter.UseVisualStyleBackColor = false;
@@ -97,8 +96,8 @@
             // 
             // bt6
             // 
-            this.bt6.BackColor = System.Drawing.Color.Silver;
-            this.bt6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt6.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.bt6.Font = new System.Drawing.Font("Cascadia Code SemiBold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt6.Location = new System.Drawing.Point(156, 352);
             this.bt6.Name = "bt6";
             this.bt6.Size = new System.Drawing.Size(70, 70);
@@ -109,8 +108,8 @@
             // 
             // bt5
             // 
-            this.bt5.BackColor = System.Drawing.Color.Silver;
-            this.bt5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt5.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.bt5.Font = new System.Drawing.Font("Cascadia Code SemiBold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt5.Location = new System.Drawing.Point(80, 352);
             this.bt5.Name = "bt5";
             this.bt5.Size = new System.Drawing.Size(70, 70);
@@ -121,8 +120,8 @@
             // 
             // bt4
             // 
-            this.bt4.BackColor = System.Drawing.Color.Silver;
-            this.bt4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt4.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.bt4.Font = new System.Drawing.Font("Cascadia Code SemiBold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt4.Location = new System.Drawing.Point(4, 352);
             this.bt4.Name = "bt4";
             this.bt4.Size = new System.Drawing.Size(70, 70);
@@ -133,8 +132,8 @@
             // 
             // bt9
             // 
-            this.bt9.BackColor = System.Drawing.Color.Silver;
-            this.bt9.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt9.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.bt9.Font = new System.Drawing.Font("Cascadia Code SemiBold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt9.Location = new System.Drawing.Point(156, 276);
             this.bt9.Name = "bt9";
             this.bt9.Size = new System.Drawing.Size(70, 70);
@@ -145,8 +144,8 @@
             // 
             // bt8
             // 
-            this.bt8.BackColor = System.Drawing.Color.Silver;
-            this.bt8.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt8.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.bt8.Font = new System.Drawing.Font("Cascadia Code SemiBold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt8.Location = new System.Drawing.Point(80, 276);
             this.bt8.Name = "bt8";
             this.bt8.Size = new System.Drawing.Size(70, 70);
@@ -157,8 +156,8 @@
             // 
             // bt7
             // 
-            this.bt7.BackColor = System.Drawing.Color.Silver;
-            this.bt7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt7.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.bt7.Font = new System.Drawing.Font("Cascadia Code SemiBold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt7.Location = new System.Drawing.Point(4, 276);
             this.bt7.Name = "bt7";
             this.bt7.Size = new System.Drawing.Size(70, 70);
@@ -167,63 +166,14 @@
             this.bt7.UseVisualStyleBackColor = false;
             this.bt7.Click += new System.EventHandler(this.numberButton_Click);
             // 
-            // btDivide
-            // 
-            this.btDivide.BackColor = System.Drawing.Color.Gray;
-            this.btDivide.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btDivide.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btDivide.Location = new System.Drawing.Point(322, 170);
-            this.btDivide.Name = "btDivide";
-            this.btDivide.Size = new System.Drawing.Size(100, 100);
-            this.btDivide.TabIndex = 6;
-            this.btDivide.Text = "÷";
-            this.btDivide.UseVisualStyleBackColor = false;
-            this.btDivide.Click += new System.EventHandler(this.operatorButton_Click);
-            // 
-            // btMultiply
-            // 
-            this.btMultiply.BackColor = System.Drawing.Color.Gray;
-            this.btMultiply.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btMultiply.Location = new System.Drawing.Point(216, 170);
-            this.btMultiply.Name = "btMultiply";
-            this.btMultiply.Size = new System.Drawing.Size(100, 100);
-            this.btMultiply.TabIndex = 5;
-            this.btMultiply.Text = "×";
-            this.btMultiply.UseVisualStyleBackColor = false;
-            this.btMultiply.Click += new System.EventHandler(this.operatorButton_Click);
-            // 
-            // btMinus
-            // 
-            this.btMinus.BackColor = System.Drawing.Color.Gray;
-            this.btMinus.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btMinus.Location = new System.Drawing.Point(110, 170);
-            this.btMinus.Name = "btMinus";
-            this.btMinus.Size = new System.Drawing.Size(100, 100);
-            this.btMinus.TabIndex = 4;
-            this.btMinus.Text = "-";
-            this.btMinus.UseVisualStyleBackColor = false;
-            this.btMinus.Click += new System.EventHandler(this.operatorButton_Click);
-            // 
-            // btPlus
-            // 
-            this.btPlus.BackColor = System.Drawing.Color.Gray;
-            this.btPlus.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btPlus.Location = new System.Drawing.Point(4, 170);
-            this.btPlus.Name = "btPlus";
-            this.btPlus.Size = new System.Drawing.Size(100, 100);
-            this.btPlus.TabIndex = 3;
-            this.btPlus.Text = "+";
-            this.btPlus.UseVisualStyleBackColor = false;
-            this.btPlus.Click += new System.EventHandler(this.operatorButton_Click);
-            // 
             // btClear
             // 
-            this.btClear.BackColor = System.Drawing.SystemColors.InfoText;
-            this.btClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btClear.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btClear.BackColor = System.Drawing.Color.Silver;
+            this.btClear.Font = new System.Drawing.Font("Cascadia Code SemiBold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btClear.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btClear.Location = new System.Drawing.Point(232, 276);
             this.btClear.Name = "btClear";
-            this.btClear.Size = new System.Drawing.Size(100, 108);
+            this.btClear.Size = new System.Drawing.Size(100, 146);
             this.btClear.TabIndex = 2;
             this.btClear.Text = "CLEAR";
             this.btClear.UseVisualStyleBackColor = false;
@@ -231,8 +181,9 @@
             // 
             // rtbIO
             // 
-            this.rtbIO.BackColor = System.Drawing.SystemColors.WindowFrame;
-            this.rtbIO.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rtbIO.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.rtbIO.Enabled = false;
+            this.rtbIO.Font = new System.Drawing.Font("Cascadia Mono SemiBold", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rtbIO.Location = new System.Drawing.Point(4, 12);
             this.rtbIO.Name = "rtbIO";
             this.rtbIO.Size = new System.Drawing.Size(418, 152);
@@ -241,8 +192,8 @@
             // 
             // bt0
             // 
-            this.bt0.BackColor = System.Drawing.Color.Silver;
-            this.bt0.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt0.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.bt0.Font = new System.Drawing.Font("Cascadia Code SemiBold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt0.ForeColor = System.Drawing.SystemColors.ControlText;
             this.bt0.Location = new System.Drawing.Point(80, 504);
             this.bt0.Name = "bt0";
@@ -254,8 +205,8 @@
             // 
             // btNegative
             // 
-            this.btNegative.BackColor = System.Drawing.Color.Silver;
-            this.btNegative.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btNegative.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btNegative.Font = new System.Drawing.Font("Cascadia Code SemiBold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btNegative.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btNegative.Location = new System.Drawing.Point(4, 504);
             this.btNegative.Name = "btNegative";
@@ -265,24 +216,11 @@
             this.btNegative.UseVisualStyleBackColor = false;
             this.btNegative.Click += new System.EventHandler(this.btNegative_Click);
             // 
-            // btAnswer
-            // 
-            this.btAnswer.BackColor = System.Drawing.Color.Silver;
-            this.btAnswer.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btAnswer.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btAnswer.Location = new System.Drawing.Point(232, 504);
-            this.btAnswer.Name = "btAnswer";
-            this.btAnswer.Size = new System.Drawing.Size(97, 70);
-            this.btAnswer.TabIndex = 21;
-            this.btAnswer.Text = "ANS";
-            this.btAnswer.UseVisualStyleBackColor = false;
-            this.btAnswer.Click += new System.EventHandler(this.btAns_Click);
-            // 
             // btHistory
             // 
-            this.btHistory.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btHistory.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btHistory.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btHistory.BackColor = System.Drawing.Color.DarkGray;
+            this.btHistory.Font = new System.Drawing.Font("Cascadia Code SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btHistory.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btHistory.Location = new System.Drawing.Point(335, 276);
             this.btHistory.Name = "btHistory";
             this.btHistory.Size = new System.Drawing.Size(87, 298);
@@ -293,8 +231,8 @@
             // 
             // btDecimal
             // 
-            this.btDecimal.BackColor = System.Drawing.Color.Silver;
-            this.btDecimal.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btDecimal.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btDecimal.Font = new System.Drawing.Font("Cascadia Code SemiBold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btDecimal.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btDecimal.Location = new System.Drawing.Point(156, 504);
             this.btDecimal.Name = "btDecimal";
@@ -304,15 +242,64 @@
             this.btDecimal.UseVisualStyleBackColor = false;
             this.btDecimal.Click += new System.EventHandler(this.btDecimal_Click);
             // 
+            // btDivide
+            // 
+            this.btDivide.BackColor = System.Drawing.Color.LightGray;
+            this.btDivide.Font = new System.Drawing.Font("Cascadia Code SemiBold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btDivide.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btDivide.Location = new System.Drawing.Point(322, 170);
+            this.btDivide.Name = "btDivide";
+            this.btDivide.Size = new System.Drawing.Size(100, 100);
+            this.btDivide.TabIndex = 6;
+            this.btDivide.Text = "÷";
+            this.btDivide.UseVisualStyleBackColor = false;
+            this.btDivide.Click += new System.EventHandler(this.operatorButton_Click);
+            // 
+            // btMultiply
+            // 
+            this.btMultiply.BackColor = System.Drawing.Color.LightGray;
+            this.btMultiply.Font = new System.Drawing.Font("Cascadia Code SemiBold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btMultiply.Location = new System.Drawing.Point(216, 170);
+            this.btMultiply.Name = "btMultiply";
+            this.btMultiply.Size = new System.Drawing.Size(100, 100);
+            this.btMultiply.TabIndex = 5;
+            this.btMultiply.Text = "×";
+            this.btMultiply.UseVisualStyleBackColor = false;
+            this.btMultiply.Click += new System.EventHandler(this.operatorButton_Click);
+            // 
+            // btMinus
+            // 
+            this.btMinus.BackColor = System.Drawing.Color.LightGray;
+            this.btMinus.Font = new System.Drawing.Font("Cascadia Code SemiBold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btMinus.Location = new System.Drawing.Point(110, 170);
+            this.btMinus.Name = "btMinus";
+            this.btMinus.Size = new System.Drawing.Size(100, 100);
+            this.btMinus.TabIndex = 4;
+            this.btMinus.Text = "-";
+            this.btMinus.UseVisualStyleBackColor = false;
+            this.btMinus.Click += new System.EventHandler(this.operatorButton_Click);
+            // 
+            // btPlus
+            // 
+            this.btPlus.BackColor = System.Drawing.Color.LightGray;
+            this.btPlus.Font = new System.Drawing.Font("Cascadia Code SemiBold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btPlus.Location = new System.Drawing.Point(4, 170);
+            this.btPlus.Name = "btPlus";
+            this.btPlus.Size = new System.Drawing.Size(100, 100);
+            this.btPlus.TabIndex = 3;
+            this.btPlus.Text = "+";
+            this.btPlus.UseVisualStyleBackColor = false;
+            this.btPlus.Click += new System.EventHandler(this.operatorButton_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.AutoSize = true;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(427, 580);
             this.Controls.Add(this.btDecimal);
             this.Controls.Add(this.btHistory);
-            this.Controls.Add(this.btAnswer);
             this.Controls.Add(this.btNegative);
             this.Controls.Add(this.bt0);
             this.Controls.Add(this.rtbIO);
@@ -349,17 +336,16 @@
         private System.Windows.Forms.Button bt9;
         private System.Windows.Forms.Button bt8;
         private System.Windows.Forms.Button bt7;
-        private System.Windows.Forms.Button btDivide;
-        private System.Windows.Forms.Button btMultiply;
-        private System.Windows.Forms.Button btMinus;
-        private System.Windows.Forms.Button btPlus;
         private System.Windows.Forms.Button btClear;
         private System.Windows.Forms.RichTextBox rtbIO;
         private System.Windows.Forms.Button bt0;
         private System.Windows.Forms.Button btNegative;
-        private System.Windows.Forms.Button btAnswer;
         private System.Windows.Forms.Button btHistory;
         private System.Windows.Forms.Button btDecimal;
+        private System.Windows.Forms.Button btDivide;
+        private System.Windows.Forms.Button btMultiply;
+        private System.Windows.Forms.Button btMinus;
+        private System.Windows.Forms.Button btPlus;
     }
 }
 
