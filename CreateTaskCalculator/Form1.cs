@@ -20,6 +20,10 @@ namespace CreateTaskCalculator {
         string result_S = "";
 
         private void updateDisplay() {
+            if (rtbIO.Text == "Enter an operation to begin") { 
+                rtbIO.Text = "";
+                rtbIO.ForeColor = System.Drawing.Color.DimGray;
+            }
             rtbIO.Text = num1_S + " " + numOperator + " " + num2_S;
         }
         private void resetOperationVariables() {
@@ -33,9 +37,7 @@ namespace CreateTaskCalculator {
             string newNum = (sender as Button).Text;
             if (numOperator == "") {
                 num1_S += newNum;
-            } else {
-                num2_S += newNum;
-            }
+            } else { num2_S += newNum; }
             updateDisplay();
         }
 
@@ -70,9 +72,7 @@ namespace CreateTaskCalculator {
         }
 
         private void btHistory_Click(object sender, EventArgs e) {
-            if (num1_S == "") {
-                rtbIO.Text = "";
-            }
+            if (num1_S == "") {  rtbIO.Text = ""; }
             Form2 f = new Form2(this);
             f.Show();
         }
@@ -90,9 +90,7 @@ namespace CreateTaskCalculator {
         private void btDecimal_Click(object sender, EventArgs e) {
             if (numOperator == "") {
                 num1_S += ".";
-            } else {
-                num2_S += ".";
-            }
+            } else { num2_S += "."; }
             updateDisplay();
         }
     }

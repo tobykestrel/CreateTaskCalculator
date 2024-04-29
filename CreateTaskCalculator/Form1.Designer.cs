@@ -183,12 +183,13 @@
             // 
             this.rtbIO.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.rtbIO.Enabled = false;
-            this.rtbIO.Font = new System.Drawing.Font("Cascadia Mono SemiBold", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rtbIO.Font = new System.Drawing.Font("Cascadia Mono SemiBold", 19F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rtbIO.ForeColor = System.Drawing.Color.DarkGray;
             this.rtbIO.Location = new System.Drawing.Point(4, 12);
             this.rtbIO.Name = "rtbIO";
             this.rtbIO.Size = new System.Drawing.Size(418, 152);
             this.rtbIO.TabIndex = 0;
-            this.rtbIO.Text = "";
+            this.rtbIO.Text = "Enter an operation to begin";
             // 
             // bt0
             // 

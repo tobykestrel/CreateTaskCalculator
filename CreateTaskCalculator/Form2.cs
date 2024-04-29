@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Windows.Forms;
 
 namespace CreateTaskCalculator {
@@ -7,13 +8,15 @@ namespace CreateTaskCalculator {
         public Form2(Form callingForm) {
             mainForm = callingForm as Form1;
             InitializeComponent();
-            for (int i = this.mainForm.historyList.Count - 1; i >= 0; i--) {
-                if (i > this.mainForm.historyList.Count - 6) {
-                    rtbHistoryDisplay.Text += (this.mainForm.historyList.Count - i) + ".\n" +
-                        this.mainForm.historyList[i] + "\n-------------------------------\n";
-                } else {
-                    rtbHistoryDisplay.Text += this.mainForm.historyList[i] + "\n";
-                }
+            displayHistory(this.mainForm.historyList);
+        }
+
+        private void displayHistory(List<string> historyData) {
+            for (int i = historyData.Count - 1; i >= 0; i--) {
+                if (i > historyData.Count - 6) {
+                    rtbHistoryDisplay.Text += (historyData.Count - i) + ".\n" +
+                        historyData[i] + "\n-------------------------------\n";
+                } else { rtbHistoryDisplay.Text += historyData[i] + "\n"; }
             }
         }
 
