@@ -89,8 +89,8 @@ namespace CreateTaskCalculator {
 
         private void btDecimal_Click(object sender, EventArgs e) {
             if (numOperator == "") {
-                num1_S += ".";
-            } else { num2_S += "."; }
+                if (!num1_S.Contains(".")) { num1_S += "."; }
+            } else if (!num2_S.Contains(".")) { num2_S += "."; }
             updateDisplay();
         }
     }
