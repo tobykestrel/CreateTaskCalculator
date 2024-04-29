@@ -31,7 +31,6 @@
             // rtbHistoryDisplay
             // 
             this.rtbHistoryDisplay.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.rtbHistoryDisplay.Enabled = false;
             this.rtbHistoryDisplay.Font = new System.Drawing.Font("Cascadia Mono SemiBold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rtbHistoryDisplay.Location = new System.Drawing.Point(12, 12);
             this.rtbHistoryDisplay.Name = "rtbHistoryDisplay";

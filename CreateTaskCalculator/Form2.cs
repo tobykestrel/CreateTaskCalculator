@@ -8,7 +8,12 @@ namespace CreateTaskCalculator {
             mainForm = callingForm as Form1;
             InitializeComponent();
             for (int i = this.mainForm.historyList.Count - 1; i >= 0; i--) {
-                rtbHistoryDisplay.Text += (this.mainForm.historyList.Count - i) + ".\n" + this.mainForm.historyList[i] + "\n--------------------------------\n";
+                if (i > this.mainForm.historyList.Count - 6) {
+                    rtbHistoryDisplay.Text += (this.mainForm.historyList.Count - i) + ".\n" +
+                        this.mainForm.historyList[i] + "\n-------------------------------\n";
+                } else {
+                    rtbHistoryDisplay.Text += this.mainForm.historyList[i] + "\n";
+                }
             }
         }
 
