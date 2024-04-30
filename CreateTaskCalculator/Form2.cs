@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Windows.Forms;
 
 namespace CreateTaskCalculator {
-    public partial class Form2 : Form {
-        private Form1 mainForm = null;
-        public Form2(Form callingForm) {
-            mainForm = callingForm as Form1;
+    public partial class CalculatorHistory : Form {
+        private Calculator mainForm = null;
+        public CalculatorHistory(Form callingForm) {
+            mainForm = callingForm as Calculator;
             InitializeComponent();
             displayHistory(this.mainForm.historyList);
         }

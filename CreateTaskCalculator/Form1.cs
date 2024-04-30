@@ -3,16 +3,16 @@
  * All components of the design are built with the .NET toolbox provided by Visual Studio
  */
 
-
 using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
 
 namespace CreateTaskCalculator {
-    public partial class Form1 : Form {
-        public Form1() {
+    public partial class Calculator : Form {
+        public Calculator() {
             InitializeComponent();
         }
+
         public List<string> historyList = new List<string>();
         string num1_S = "";
         string numOperator = "";
@@ -26,6 +26,7 @@ namespace CreateTaskCalculator {
             }
             rtbIO.Text = num1_S + " " + numOperator + " " + num2_S;
         }
+
         private void resetOperationVariables() {
             num1_S = "";
             numOperator = "";
@@ -73,7 +74,7 @@ namespace CreateTaskCalculator {
 
         private void btHistory_Click(object sender, EventArgs e) {
             if (num1_S == "") {  rtbIO.Text = ""; }
-            Form2 f = new Form2(this);
+            CalculatorHistory f = new CalculatorHistory(this);
             f.Show();
         }
 

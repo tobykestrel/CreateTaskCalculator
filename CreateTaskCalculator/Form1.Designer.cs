@@ -1,5 +1,5 @@
 ﻿namespace CreateTaskCalculator {
-    partial class Form1 {
+    partial class Calculator {
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -292,7 +292,7 @@
             this.btPlus.UseVisualStyleBackColor = false;
             this.btPlus.Click += new System.EventHandler(this.operatorButton_Click);
             // 
-            // Form1
+            // Calculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -319,8 +319,8 @@
             this.Controls.Add(this.bt1);
             this.Controls.Add(this.bt2);
             this.Controls.Add(this.bt3);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "Calculator";
+            this.Text = "Calculator";
             this.ResumeLayout(false);
 
         }

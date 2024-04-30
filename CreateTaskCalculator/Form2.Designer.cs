@@ -1,5 +1,5 @@
 ﻿namespace CreateTaskCalculator {
-    partial class Form2 {
+    partial class CalculatorHistory {
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -62,7 +62,7 @@
             this.btClearHistory.UseVisualStyleBackColor = false;
             this.btClearHistory.Click += new System.EventHandler(this.btClearHistory_Click);
             // 
-            // Form2
+            // CalculatorHistory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -72,8 +72,8 @@
             this.Controls.Add(this.btClearHistory);
             this.Controls.Add(this.btClose);
             this.Controls.Add(this.rtbHistoryDisplay);
-            this.Name = "Form2";
-            this.Text = "Form2";
+            this.Name = "CalculatorHistory";
+            this.Text = "Calculator History";
             this.ResumeLayout(false);
 
         }
